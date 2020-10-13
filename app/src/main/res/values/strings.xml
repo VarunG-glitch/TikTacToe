@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">TikTacToe</string>
+    <string name="welcome">Welcome To Tic Tak Toe</string>
+    <string name="grid_desc">This is main grid</string>
+    <string name="status">Tap to play first turn is X\'s turn</string>
+</resources>
