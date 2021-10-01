@@ -1,0 +1,627 @@
+1
+00:00:00,570 --> 00:00:04,860
+So as I mentioned earlier there's two Android concepts that I want to teach you before we move forward
+
+2
+00:00:04,860 --> 00:00:05,790
+and make our notes app.
+
+3
+00:00:05,790 --> 00:00:10,800
+So the first one that I want to teach you about is menu so this is a way to add some actual options
+
+4
+00:00:10,800 --> 00:00:16,040
+for our users and they're kind of in their own menu place you'll notice as soon as we build it in an
+
+5
+00:00:16,050 --> 00:00:18,750
+app about where this is and how different apps use them.
+
+6
+00:00:18,750 --> 00:00:24,730
+So let's go ahead and start a new project I'm going to name mine just simply the menu demo.
+
+7
+00:00:24,900 --> 00:00:30,010
+Nice plain vanilla title there and we'll go ahead and hit next on this.
+
+8
+00:00:30,020 --> 00:00:34,460
+We want this to be an empty activity and we'll finish up there.
+
+9
+00:00:34,890 --> 00:00:38,350
+So it's been a little bit interesting with the android studio in the past.
+
+10
+00:00:38,350 --> 00:00:41,560
+It used to be that there always used to be apps that start with a menu.
+
+11
+00:00:41,610 --> 00:00:46,170
+Now that is not the case you can choose an activity habit in there but I'd rather just show you how
+
+12
+00:00:46,170 --> 00:00:51,350
+to make an empty app and be able to add a menu and later than have you have to depend on a certain you
+
+13
+00:00:51,340 --> 00:00:54,470
+know template when you start an app if you know how to add it in.
+
+14
+00:00:54,510 --> 00:00:57,990
+It's just going to make it that much better of an Android Developer.
+
+15
+00:00:57,990 --> 00:01:05,760
+So with that the first thing that we need to do is we need to be able to go and get the particular menu
+
+16
+00:01:05,760 --> 00:01:06,990
+that is that we want to create.
+
+17
+00:01:06,990 --> 00:01:12,030
+So there's a couple of steps that have to happen here so if we expand our app out here we're going to
+
+18
+00:01:12,030 --> 00:01:16,780
+go to our resources and we're first going to create a new folder here.
+
+19
+00:01:16,830 --> 00:01:21,070
+So let's go ahead and Right-Click we want to do new directory.
+
+20
+00:01:21,390 --> 00:01:27,200
+There we go and let's just simply call this menu right like that.
+
+21
+00:01:27,480 --> 00:01:28,320
+OK.
+
+22
+00:01:28,800 --> 00:01:33,960
+Now once we go ahead and grab that the next thing that we're going to do is we're going to have this
+
+23
+00:01:33,960 --> 00:01:41,250
+menu selected and then we're going to say file new menu resource file right here so go ahead and select
+
+24
+00:01:41,250 --> 00:01:42,030
+that.
+
+25
+00:01:42,090 --> 00:01:46,740
+Now for the name that you want to give this you simply just doesn't matter immensely what this says
+
+26
+00:01:46,770 --> 00:01:49,880
+but let's just go ahead and call ours underscore main menu.
+
+27
+00:01:49,890 --> 00:01:55,680
+This is our way of saying this is going to be you know the one and only sort of main menu that we have
+
+28
+00:01:55,680 --> 00:01:57,070
+in the directory name.
+
+29
+00:01:57,090 --> 00:02:01,690
+Make sure the menu right we're trying to put it in that folder there we'll go ahead and hit OK.
+
+30
+00:02:02,160 --> 00:02:07,800
+And now once we've done that you'll see we get in SML file which is very similar to like our activity
+
+31
+00:02:07,800 --> 00:02:13,550
+underscore main X-amount right where we can kind of set things up visually see what they look like.
+
+32
+00:02:13,920 --> 00:02:16,340
+But this is going to be for the menu item.
+
+33
+00:02:16,500 --> 00:02:21,780
+And if we go ahead and write or click on this little menu directory here we can see we've got that main
+
+34
+00:02:21,780 --> 00:02:23,430
+underscore menu X-amount.
+
+35
+00:02:23,580 --> 00:02:25,310
+That means we're in a good place.
+
+36
+00:02:25,530 --> 00:02:31,050
+Now the next step for us is we've got to fill in this main menu with the appropriate information so
+
+37
+00:02:31,050 --> 00:02:33,590
+I find this easiest to do via text.
+
+38
+00:02:33,870 --> 00:02:35,430
+So let's go ahead and go to the text.
+
+39
+00:02:35,430 --> 00:02:41,130
+View here so in between these two menu tags This is where we want to add what are called menu items.
+
+40
+00:02:41,130 --> 00:02:45,960
+So these items we've got to give them a title we got to give them an idea and really that's it.
+
+41
+00:02:45,960 --> 00:02:47,960
+So let's go ahead and create our first item.
+
+42
+00:02:48,030 --> 00:02:53,160
+You'll see as we do that we get some nice auto complete help from Android studio so the name that we're
+
+43
+00:02:53,160 --> 00:03:00,210
+looking for here is Android title so I'll type out Android Colan title and it we've got to set this
+
+44
+00:03:00,210 --> 00:03:03,900
+to some strings so in this case let's maybe call it like settings.
+
+45
+00:03:03,900 --> 00:03:04,440
+All right.
+
+46
+00:03:04,470 --> 00:03:08,120
+And we'll do a space the next thing that we're looking for here is Android.
+
+47
+00:03:08,210 --> 00:03:11,300
+I will scroll down there that is.
+
+48
+00:03:11,670 --> 00:03:17,310
+So then we've got to put some sort of idea in here and I'm just going to call this maybe you'll see
+
+49
+00:03:17,780 --> 00:03:25,570
+at plus ID slash and I'm going to have this be equal to the settings.
+
+50
+00:03:25,670 --> 00:03:26,310
+OK.
+
+51
+00:03:26,580 --> 00:03:31,890
+So once you've gone ahead and got that in place we can go ahead and do our ending and that will automatically
+
+52
+00:03:31,890 --> 00:03:33,790
+add the back side of that item tag there.
+
+53
+00:03:33,840 --> 00:03:34,370
+OK.
+
+54
+00:03:34,380 --> 00:03:39,330
+So just to see what this would look like if we go back to our design view look at that we get the three
+
+55
+00:03:39,330 --> 00:03:41,600
+little icon menu item here.
+
+56
+00:03:41,610 --> 00:03:47,540
+And then whenever someone wants to check out one of the menu items it's going to show up here like this.
+
+57
+00:03:47,910 --> 00:03:49,740
+So let's go ahead and go back to our text.
+
+58
+00:03:49,820 --> 00:03:55,380
+We want to add another menu item here we just simply have to copy this and paste it down below.
+
+59
+00:03:55,380 --> 00:04:01,170
+And we're going to change this from settings to help and instead of the idea of settings we'll call
+
+60
+00:04:01,170 --> 00:04:02,940
+this one help.
+
+61
+00:04:02,940 --> 00:04:04,950
+So now if we go back to our design view.
+
+62
+00:04:04,950 --> 00:04:05,550
+Right.
+
+63
+00:04:05,550 --> 00:04:10,070
+Someone can either check for more information about the settings or they can suffer help.
+
+64
+00:04:10,340 --> 00:04:15,020
+And as you can imagine you can put as many or as little of these as you would like.
+
+65
+00:04:15,660 --> 00:04:19,920
+So with those in place we've got to write a little bit of code here.
+
+66
+00:04:20,430 --> 00:04:23,350
+So let's go back to our main activity.
+
+67
+00:04:23,460 --> 00:04:26,760
+We're not going to touch this on create method but what we're going to do is we're going to add a new
+
+68
+00:04:26,760 --> 00:04:34,300
+method up top and we're going to call if we just start typing out on create options menu.
+
+69
+00:04:34,410 --> 00:04:37,990
+That's what we're looking for it's going to go do a ton of stuff for us.
+
+70
+00:04:38,010 --> 00:04:43,770
+Basically this is going to allow us to get the menu all set up so what we're going to do first is get
+
+71
+00:04:43,770 --> 00:04:49,470
+something called the menu inflator or want to say capital menu in Fator lower case menu inflator is
+
+72
+00:04:49,560 --> 00:04:53,700
+equal to get menu inflator.
+
+73
+00:04:54,030 --> 00:04:56,280
+And how many times you say inflator.
+
+74
+00:04:56,280 --> 00:05:03,330
+Then once we have this menu inflator we go ahead and type that out then we are going to say Dot inflate
+
+75
+00:05:03,750 --> 00:05:07,360
+and this is where we're going to give access to our menu that we had just created.
+
+76
+00:05:07,350 --> 00:05:14,280
+So we're going to say capital our DOT that we want to get to menue that gets us to our menu directory
+
+77
+00:05:14,310 --> 00:05:16,870
+and then we're going to say Dot main menu.
+
+78
+00:05:16,970 --> 00:05:17,390
+OK.
+
+79
+00:05:17,400 --> 00:05:18,890
+That's how it connects there.
+
+80
+00:05:19,020 --> 00:05:24,270
+And the next thing that we need to pass this is this menu object right up top so just go ahead and pass
+
+81
+00:05:24,270 --> 00:05:25,330
+that through.
+
+82
+00:05:25,350 --> 00:05:28,940
+And so now with these things in place let's go ahead and hit run.
+
+83
+00:05:29,220 --> 00:05:32,340
+We want to see what this looks like on the emulator.
+
+84
+00:05:32,340 --> 00:05:37,770
+So again what we should see showing up here is the menu popping down and showing the settings showing
+
+85
+00:05:37,770 --> 00:05:38,560
+the help.
+
+86
+00:05:38,640 --> 00:05:43,080
+And then I'm going to show you how you can go about making it so that when someone selects one of those
+
+87
+00:05:43,560 --> 00:05:47,010
+you can write some code to appropriately respond to that.
+
+88
+00:05:47,010 --> 00:05:54,690
+So let's go ahead and get her emulator all set up here and we'll just wait a moment here while this
+
+89
+00:05:54,690 --> 00:05:56,600
+is getting all ready to rock and roll.
+
+90
+00:05:56,640 --> 00:06:00,760
+And there we go as soon as you mentioned the emulator taking a long time.
+
+91
+00:06:00,920 --> 00:06:03,750
+That's as soon as the menu or emulator starts working.
+
+92
+00:06:03,750 --> 00:06:06,470
+So let's hit the little gypsies here for the menu and look at that.
+
+93
+00:06:06,480 --> 00:06:11,280
+We get the settings we get the help just like we were looking for and if you decide user decides they
+
+94
+00:06:11,280 --> 00:06:13,720
+don't want to pick something they just tap out here.
+
+95
+00:06:14,070 --> 00:06:19,350
+But then the next question for us is you know someone wants to select the settings or they select help
+
+96
+00:06:19,350 --> 00:06:19,570
+right.
+
+97
+00:06:19,570 --> 00:06:22,220
+Like we should have the ability to run some code.
+
+98
+00:06:22,230 --> 00:06:24,520
+And let me show you how we can do that.
+
+99
+00:06:24,840 --> 00:06:30,150
+So we're going to come back to our code that we have here but we're going to create Now a new method
+
+100
+00:06:30,840 --> 00:06:37,930
+and the method that we're going to create is called on options and on options items selected.
+
+101
+00:06:37,920 --> 00:06:43,670
+So this gets called when someone selects one of these items so they give us a couple of things here
+
+102
+00:06:43,680 --> 00:06:47,470
+first it's calling superdog on item selections we want to keep that.
+
+103
+00:06:47,640 --> 00:06:52,860
+But we do with this want to return back a boolean about true or false about whether we were able to
+
+104
+00:06:52,860 --> 00:06:56,250
+successfully provide the user what they needed.
+
+105
+00:06:56,250 --> 00:07:02,040
+So right now it's calling to the Super one we want to leave the super call but we want to do this return
+
+106
+00:07:02,040 --> 00:07:07,260
+later so I'm going to cut out the return and I'm going to pases it down below and we'll do our own return
+
+107
+00:07:07,260 --> 00:07:09,510
+later and again we have to return a boolean.
+
+108
+00:07:09,510 --> 00:07:15,360
+So maybe for the time being we'll go ahead and return true to say everything works out.
+
+109
+00:07:15,510 --> 00:07:22,020
+Now with this on options item selected it passes us this menu item and we can go ahead and check with
+
+110
+00:07:22,020 --> 00:07:24,610
+this menu item and see what it's ideas in.
+
+111
+00:07:24,610 --> 00:07:29,190
+Depending on the ID we can do something with it so this is a great situation to use a switch.
+
+112
+00:07:29,190 --> 00:07:32,580
+You could also use these statements but I think a switch is a little more elegant.
+
+113
+00:07:32,670 --> 00:07:36,910
+So we're going to say switch print the season do our curly brackets like that.
+
+114
+00:07:37,050 --> 00:07:40,640
+And the thing that we want to inspect is this item over here.
+
+115
+00:07:40,830 --> 00:07:46,330
+So when I say item dot and then we want to get item ID.
+
+116
+00:07:46,470 --> 00:07:51,030
+So this is going to provide us for example if we go back to our menu item it's either going to give
+
+117
+00:07:51,030 --> 00:07:55,140
+us like settings or help right and then we can move forward from there.
+
+118
+00:07:55,140 --> 00:08:04,790
+So one of the cases would be we're going to say case capital R ID dot settings just like that.
+
+119
+00:08:04,800 --> 00:08:09,930
+So after that we're going to do a colon make sure it's not a semi-colon and in which case then we'd
+
+120
+00:08:09,930 --> 00:08:19,830
+want to log out some information so maybe you would say something like item selected and then we'd specify
+
+121
+00:08:19,830 --> 00:08:22,060
+here what menu item it was that was selected.
+
+122
+00:08:22,080 --> 00:08:27,330
+And if this is the settings we'll say settings can do our semi-colon there.
+
+123
+00:08:27,510 --> 00:08:32,790
+Once we have that in place if we were able to successfully do that we would want to return true here
+
+124
+00:08:32,790 --> 00:08:34,680
+to say Yep the user.
+
+125
+00:08:34,680 --> 00:08:39,930
+We ran the code that we needed to return true and that then makes it so to make sure that no other code
+
+126
+00:08:39,930 --> 00:08:41,180
+gets run.
+
+127
+00:08:41,190 --> 00:08:46,220
+Another case that we would want to check for would be capital our DOT ID dot.
+
+128
+00:08:46,230 --> 00:08:48,060
+In this case we want the help.
+
+129
+00:08:48,240 --> 00:08:52,950
+So go ahead and do that and we're essentially running the same code right like we're going to just copy
+
+130
+00:08:52,950 --> 00:08:56,910
+and paste this instead of settings will say item selected.
+
+131
+00:08:56,940 --> 00:09:00,720
+And I guess we should put an extra he's selected.
+
+132
+00:09:00,720 --> 00:09:01,770
+There we go.
+
+133
+00:09:01,800 --> 00:09:04,630
+This one should say help if they select that.
+
+134
+00:09:04,830 --> 00:09:09,420
+Now any time that you have a switch statement you have to have a default there to say you know in case
+
+135
+00:09:09,420 --> 00:09:15,030
+it didn't equal anything from above and in this situation let's just go ahead and return false because
+
+136
+00:09:15,030 --> 00:09:19,460
+that's saying hey something went wrong we didn't run the code that we wanted to there.
+
+137
+00:09:19,830 --> 00:09:20,230
+All right.
+
+138
+00:09:20,250 --> 00:09:25,560
+So with all of this in place that means we can now get rid of this return in fact you can see Andray
+
+139
+00:09:25,560 --> 00:09:29,460
+studio saying this thing's on resettable you've already handled all the situations there.
+
+140
+00:09:29,460 --> 00:09:34,620
+So let's just go ahead and get rid of that and with this this is everything that I wanted to teach you.
+
+141
+00:09:34,650 --> 00:09:37,830
+Let's go ahead and test it out to make sure that this works.
+
+142
+00:09:37,920 --> 00:09:40,610
+So we'll pull up our emulator here.
+
+143
+00:09:40,690 --> 00:09:46,470
+We should also get Lague cat up and running so that you can see what gets logged whenever we select
+
+144
+00:09:46,470 --> 00:09:52,680
+one of these items so here comes the app and we'll hit the menu and let's select one of the items maybe
+
+145
+00:09:52,680 --> 00:09:56,340
+help and look at that item selected help.
+
+146
+00:09:56,340 --> 00:09:59,720
+Now let's go ahead do the same thing for once someone taps on settings and look it up.
+
+147
+00:10:00,420 --> 00:10:02,760
+Item selected settings.
+
+148
+00:10:03,210 --> 00:10:08,220
+So this is a quick little lecture I wanted to just teach you this one concept very simply remember the
+
+149
+00:10:08,220 --> 00:10:13,360
+whole process for creating a menu item is you've got to create a menu directory.
+
+150
+00:10:13,380 --> 00:10:18,150
+Then one of these menu layouts once you do that you've got to put in the correct items and then these
+
+151
+00:10:18,150 --> 00:10:20,330
+are the two main functions that you'll be working with.
+
+152
+00:10:20,370 --> 00:10:27,420
+The create option menus that just make sure that this shows this menu over here and then on option items
+
+153
+00:10:27,440 --> 00:10:31,470
+select it says ok when someone clicks on one of these or taps on one of these.
+
+154
+00:10:31,560 --> 00:10:35,780
+Go ahead run a code depending on which item it is that they selected.
+
+155
+00:10:35,880 --> 00:10:36,510
+OK.
+
+156
+00:10:36,540 --> 00:10:41,940
+All right so let's go ahead and learn about dialog boxes and then we'll move forward with making our
+
+157
+00:10:41,940 --> 00:10:42,270
+app.
